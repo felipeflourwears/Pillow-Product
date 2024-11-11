@@ -1,10 +1,13 @@
+import Product3D from "./components/Product3D"
+
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <div className="App">
+        <h1 className="text-2xl font-bold text-center my-4">OLA OSE </h1>
+        <Product3D />
+      </div>
     </>
   )
 }

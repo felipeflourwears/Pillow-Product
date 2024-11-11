@@ -1,3 +1,15 @@
+### Pillow Product
+
+
+### Package
+```bash
+npm install three @react-three/fiber @react-three/drei
+npm install three-mesh-bvh@0.8.0
+npm install --save-dev @types/three
+```
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
