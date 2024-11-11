@@ -15,13 +15,12 @@ function Model({ path, scale = 1 }: ModelProps) {
 
 export default function Product3D() {
   return (
-    <div className="w-full h-[500px]">
-      <Canvas camera={{ position: [0, 0, 5] }}>
+    <div className="relative z-20 w-full h-[500px]">
+      <Canvas camera={{ position: [0, 0, 5] }} className="bg-transparent">
         <ambientLight intensity={0.5} />
         <directionalLight position={[2, 2, 2]} intensity={1} />
         <Suspense fallback={null}>
-          {/* Aquí ajustas la escala para hacer el modelo más grande */}
-          <Model path="/public/product.glb" scale={2} />
+          <Model path="/product.glb" scale={2} />
         </Suspense>
         <OrbitControls enableZoom={true} />
       </Canvas>
